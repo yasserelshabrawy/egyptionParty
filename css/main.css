@@ -1,4 +1,4 @@
-#header{
+#home{
     background-image: url(../img/events-heavenly-header.jpeg);
     background-position: center center;
     background-size: cover;
@@ -9,7 +9,7 @@
     background-color: rgba(214, 46, 51 , 0.6);;
 }
 aside{
-    position: fixed;
+    position: absolute;
     top: 0px;
     bottom: 0px;
     z-index: 9999999;
@@ -41,7 +41,7 @@ section{
     background-color: #ccc;
     color: black;
 }
-#countDown{
+#duration{
     background-image: url(../img/invitation-2508607__340.jpeg);
     background-position: center center;
     background-size: cover;

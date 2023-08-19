@@ -1,17 +1,23 @@
+// side Bar
 let innerrWidth = $(".sideBar").innerWidth();
 $("aside").css({ left: -innerrWidth });
-
 $(".open").click(function () {
   $("aside").animate({ left: 0 }, 500);
 });
 $(".close").click(function () {
   $("aside").animate({ left: -innerrWidth }, 500);
 });
-
+// singer 
 $(".singerone").click(function (e) {
   $(e.target).next().slideToggle(500);
 });
+// scroll animation
+$('.home a').click(function(e){
+  let x = $(e.target).attr('href')
+  let offsetTop = $(x).offset().top
+  $('html,body').animate({scrollTop:offsetTop}, 1000)
 
+})
 // Set the date we're counting down to
 let countDownDate = new Date("Oct 25, 2023 15:37:25").getTime();
 
@@ -59,6 +65,7 @@ let x = setInterval(function () {
   }
 }, 1000);
 
+// count chars in textarea
 let maxLength = 100;
 $("textarea").keyup(function (e) {
   let length = $(e.target).val().length;
